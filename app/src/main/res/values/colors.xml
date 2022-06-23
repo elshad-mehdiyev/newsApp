@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#565f6b</color>
+    <color name="purple_500">#565f6b</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#1f8fe8</color>
+    <color name="cardView_back">#2c343a</color>
+    <color name="background_main_page">#E8EAEF</color>
+    <color name="news_read_count_tint">#90AAFC</color>
+    <color name="favorite_icon_tint">#FD7A88</color>
+    <color name="comment_icon_tint">#7FB672</color>
+    <color name="share_icon_tint">#5771A8</color>
+</resources>

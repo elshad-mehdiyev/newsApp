@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/reading_webview"
+        android:icon="@drawable/read_webview"
+        app:showAsAction="ifRoom"
+        android:title="reading_mode"/>
+    <item
+        android:id="@+id/share_webview"
+        android:icon="@drawable/share_news"
+        app:showAsAction="ifRoom"
+        android:title="share_webView"
+        />
+    <item
+        android:id="@+id/save_webview"
+        android:icon="@drawable/bookmark_webview"
+        app:showAsAction="ifRoom"
+        android:title="save_webView"/>
+</menu>

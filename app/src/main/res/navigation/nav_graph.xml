@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeNews">
+
+    <fragment
+        android:id="@+id/homeNews"
+        android:name="com.news.mynewsapp.view.HomeNews"
+        android:label="fragment_home_news"
+        tools:layout="@layout/fragment_home_news" >
+        <action
+            android:id="@+id/action_homeNews_to_webViewOfNews2"
+            app:destination="@id/webViewOfNews2" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilePage"
+        android:name="com.news.mynewsapp.view.ProfilePage"
+        android:label="ProfilePage" >
+        <action
+            android:id="@+id/action_profilePage_to_webViewOfNews2"
+            app:destination="@id/webViewOfNews2" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewSource"
+        android:name="com.news.mynewsapp.view.AddNewSource"
+        android:label="AddNewSource" />
+    <fragment
+        android:id="@+id/exploreNews"
+        android:name="com.news.mynewsapp.view.ExploreNews"
+        android:label="ExploreNews" >
+        <action
+            android:id="@+id/action_exploreNews_to_webViewOfNews2"
+            app:destination="@id/webViewOfNews2" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsNewsFragment"
+        android:name="com.news.mynewsapp.view.DetailsNewsFragment"
+        android:label="DetailsNewsFragment" >
+    </fragment>
+    <fragment
+        android:id="@+id/webViewOfNews2"
+        android:name="com.news.mynewsapp.view.WebViewOfNews"
+        android:label="fragment_web_view_of_news"
+        tools:layout="@layout/fragment_web_view_of_news" >
+        <argument
+            android:name="article"
+            app:argType="com.news.mynewsapp.model.Articles" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.news.mynewsapp.view.ViewPagerFragment"
+        android:label="ViewPagerFragment" />
+</navigation>
