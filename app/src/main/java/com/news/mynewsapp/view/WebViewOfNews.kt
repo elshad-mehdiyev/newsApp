@@ -67,14 +67,12 @@ class WebViewOfNews : Fragment() {
                         }
                     true}
                 R.id.share_webview -> {
-                    val share = Intent.createChooser(Intent().apply {
-                        action = Intent.ACTION_SEND
-                        putExtra(Intent.EXTRA_TEXT, Uri.parse(articles.url))
-                        //7
-                        flags = Intent.FLAG_GRANT_READ_URI_PERMISSION
-                    }, null)
-                    startActivity(share)
-                true}
+                    val intent = Intent(Intent.ACTION_SEND)
+                        .setType("text/plain")
+                        .putExtra(Intent.EXTRA_TEXT, articles.url)
+                    startActivity(intent)
+                    true
+                }
                 else -> true
             }
         }
